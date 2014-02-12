@@ -29,5 +29,5 @@
 <?php endforeach; ?>
 
 <br /><br />
-<a href="/2014/schedule/">Back to schedule</a>
+
 
