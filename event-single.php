@@ -30,4 +30,7 @@
 
 <br /><br />
 
-
+<?php if ( get_field('paper_pdf') ) : ?>
+	<?php $paper_pdf = get_field('paper_pdf'); ?>
+	<a href="<?php echo $paper_pdf['url']; ?>" class="button small">Download Proceedings Paper</a>
+<?php endif; ?>
