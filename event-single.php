@@ -34,6 +34,6 @@
 	<?php $paper_pdf = get_field('paper_pdf'); ?>
 	<a href="<?php echo $paper_pdf['url']; ?>" class="button small">Download Proceedings Paper</a>
 	<?php if ( get_field('openpraxis_paper') ) : ?>
-		<p><em>Final version of the paper will be available in the upcoming version of the <a href="http://openpraxis.org/">OpenPraxis journal.</a></em></p>
+		<p><em>Final version of the paper will appear in the upcoming version of the <a href="http://openpraxis.org/">OpenPraxis journal.</a></em></p>
 	<?php endif; ?>
 <?php endif; ?>
