@@ -32,8 +32,12 @@
 
 <?php if ( get_field('paper_pdf') ) : ?>
 	<?php $paper_pdf = get_field('paper_pdf'); ?>
-	<a href="<?php echo $paper_pdf['url']; ?>" class="button small">Download Proceedings Paper</a>
-	<?php if ( get_field('openpraxis_paper') ) : ?>
-		<p><em>Final version of the paper will appear in the upcoming version of the <a href="http://openpraxis.org/">OpenPraxis journal.</a></em></p>
+	<?php if ( get_field('openpraxis_url') ) : ?>
+		<a href="<?php the_field('openpraxis_url'); ?>" class="button small">View Paper in OpenPraxis Journal</a>
+	<?php else : ?>
+		<a href="<?php echo $paper_pdf['url']; ?>" class="button small">Download Proceedings Paper</a>
+		<?php if ( get_field('openpraxis_paper') ) : ?>
+			<p><em>Final version of the paper will appear in the upcoming version of the <a href="http://openpraxis.org/">OpenPraxis journal.</a></em></p>
+		<?php endif; ?>
 	<?php endif; ?>
 <?php endif; ?>
